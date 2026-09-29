@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chibiprint.id - Y2K Photobooth & Print Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- MARQUEE HEADER -->
+    <div class="ticker-wrap">
+        <div class="ticker">
+            ✦ WELCOME TO CHIBIPRINT.ID ✦ Y2K PHOTOBOOTH & CUSTOM PRINT ✦ ORDER VIA WHATSAPP ✦ FAST PROCESS ✦ BEST QUALITY ✦
+        </div>
+    </div>
+
+    <!-- MAIN CONTAINER -->
+    <div class="container">
+        
+        <!-- HEADER / BRANDING -->
+        <header class="site-header">
+            <div class="logo-box">
+                <img src="logo.jpg" alt="Chibiprint Logo" class="site-logo">
+            </div>
+            <h1 class="glitch-title">CHIBIPRINT.ID</h1>
+            <p class="subtitle">★ Cutest Y2K Photobooth & Custom Print Shop ★</p>
+            
+            <!-- NAVIGATION TABS -->
+            <nav class="nav-tabs">
+                <button class="nav-btn active" onclick="switchTab('dashboard')">🏠 Dashboard</button>
+                <button class="nav-btn" onclick="switchTab('pricelist')">🏷️ Pricelist</button>
+                <button class="nav-btn" onclick="switchTab('order')">🛒 Order Now</button>
+                <button class="nav-btn" onclick="switchTab('templates')">🖼️ Template</button>
+                <button class="nav-btn" onclick="switchTab('transaksi')">🧾 Transaksi & Nota</button>
+                <button class="nav-btn" onclick="switchTab('payment')">💳 QRIS</button>
+            </nav>
+        </header>
+
+        <!-- TAB 1: DASHBOARD / UTAMA -->
+        <main id="tab-dashboard" class="tab-content active">
+            <section class="section-card hero-card">
+                <span class="badge-store">🎀 Official Store 🎀</span>
+                <h2>Selamat Datang di chibiprint.id!</h2>
+                <p class="hero-text">Tempat cetak foto, ganci custom, jasa cetak, dan hadiah unik dengan tema Y2K & aesthetic!</p>
+                <div class="hero-btns">
+                    <button class="btn-pink" onclick="switchTab('pricelist')">Lihat Pricelist 📦</button>
+                    <button class="btn-yellow" onclick="switchTab('order')">Order Now 🛒</button>
+                </div>
+            </section>
+
+            <div class="features-grid">
+                <div class="feature-item">
+                    <span>⚡ <strong>Fast Process:</strong> Proses cepat 1-3 hari kerja sesuai antrean!</span>
+                </div>
+                <div class="feature-item">
+                    <span>🎨 <strong>High Quality:</strong> Cetak tajam, warna cerah, & bahan berkualitas.</span>
+                </div>
+            </div>
+        </main>
+
+        <!-- TAB 2: PRICELIST LENGKAP -->
+        <section id="tab-pricelist" class="tab-content">
+            <section class="section-card">
+                <h2>🏷️ PRICELIST & KATALOG</h2>
+                <p class="section-desc">Daftar harga lengkap seluruh produk dan layanan Chibiprint.id!</p>
+                
+                <!-- KATEGORI 1: CETAK FOTO -->
+                <div class="price-cat">
+                    <h3 class="price-cat-title">📷 CETAK FOTO</h3>
+                    <div class="price-subgroup">
+                        <strong>📌 Pas Foto</strong>
+                        <div class="price-item"><span>Pas Foto 2x3 (Set 8 Foto)</span><span class="price-tag">Rp 3.000</span></div>
+                        <div class="price-item"><span>Pas Foto 3x4 (Set 6 Foto)</span><span class="price-tag">Rp 3.000</span></div>
+                        <div class="price-item"><span>Pas Foto 4x6 (Set 4 Foto)</span><span class="price-tag">Rp 3.000</span></div>
+                    </div>
+
+                    <div class="price-subgroup">
+                        <strong>📌 Ukuran Small - Medium - Large</strong>
+                        <div class="price-item"><span>Foto 2R</span><span class="price-tag">Rp 1.000</span></div>
+                        <div class="price-item"><span>Foto 3R</span><span class="price-tag">Rp 2.000</span></div>
+                        <div class="price-item"><span>Foto 4R</span><span class="price-tag">Rp 3.000</span></div>
+                        <div class="price-item"><span>Foto 5R</span><span class="price-tag">Rp 4.000</span></div>
+                        <div class="price-item"><span>Foto 6R</span><span class="price-tag">Rp 5.000</span></div>
+                        <div class="price-item"><span>Foto 8R</span><span class="price-tag">Rp 10.000</span></div>
+                        <div class="price-item"><span>Foto 10R</span><span class="price-tag">Rp 11.000</span></div>
+                        <div class="price-item"><span>Foto A4</span><span class="price-tag">Rp 13.000</span></div>
+                        <div class="price-item"><span>Photo Strip</span><span class="price-tag">Rp 2.500 / strip</span></div>
+                        <div class="price-item"><span>Mini Strip</span><span class="price-tag">Rp 1.000 / strip</span></div>
+                        <div class="price-item"><span>Polaroid</span><span class="price-tag">Rp 1.000 / polaroid</span></div>
+                    </div>
+                </div>
+
+                <!-- KATEGORI 2: KEYCHAIN & GANCI -->
+                <div class="price-cat">
+                    <h3 class="price-cat-title">🔑 KEYCHAIN & GANCI</h3>
+                    <div class="price-item"><span>Keychain Akrilik</span><span class="price-tag">Rp 7.000</span></div>
+                    <div class="price-item"><span>Ganci ID Card</span><span class="price-tag">Rp 12.000</span></div>
+                </div>
+
+                <!-- KATEGORI 3: JASA CETAK -->
+                <div class="price-cat">
+                    <h3 class="price-cat-title">🖨️ JASA CETAK</h3>
+                    <div class="price-item"><span>Cetak Kartu BPJS</span><span class="price-tag">Rp 15.000</span></div>
+                    <div class="price-item"><span>Cetak KTM / Kartu Pelajar PVC</span><span class="price-tag">Rp 15.000</span></div>
+                    <div class="price-item"><span>Cetak ID Card PVC</span><span class="price-tag">Rp 12.000</span></div>
+                    <div class="price-item"><span>Cetak Undangan All Event</span><span class="price-tag">Tanya WA</span></div>
+                    <div class="price-item"><span>Cetak Kartu Nama</span><span class="price-tag">Rp 5.000 / kartu</span></div>
+                    <div class="price-item"><span>Cetak Stiker</span><span class="price-tag">Tanya WA</span></div>
+                    <div class="price-item"><span>Cetak Amplop Custom</span><span class="price-tag">Rp 15.000</span></div>
+                    <div class="price-item"><span>Cetak Hangtag Ultah</span><span class="price-tag">Rp 5.000</span></div>
+                </div>
+
+                <!-- KATEGORI 4: CUSTOM GIFT -->
+                <div class="price-cat">
+                    <h3 class="price-cat-title">🎁 CUSTOM GIFT</h3>
+                    <div class="price-item"><span>Mini Gift Snack + Foto</span><span class="price-tag">Rp 15.000</span></div>
+                    <div class="price-item"><span>Booklet Kenangan</span><span class="price-tag">Rp 25.000</span></div>
+                    <div class="price-item"><span>DIY Birthday Card</span><span class="price-tag">Rp 20.000</span></div>
+                    <div class="price-item"><span>Scrap Frame Costume / Bingkai</span><span class="price-tag">Rp 45.000</span></div>
+                </div>
+            </section>
+        </section>
+
+        <!-- TAB 3: ORDER FORM INTERAKTIF -->
+        <section id="tab-order" class="tab-content">
+            <section class="section-card">
+                <h2>🛒 FORM PEMESANAN</h2>
+                <p class="section-desc">Pilih kategori dan produk yang ingin dipesan di bawah ini!</p>
+
+                <div class="form-group mb-15">
+                    <label>Pilih Kategori Produk:</label>
+                    <select id="select-category" class="select-box" onchange="filterOrderCategory()">
+                        <option value="foto">📷 Cetak Foto</option>
+                        <option value="ganci">🔑 Keychain & Ganci</option>
+                        <option value="jasa">🖨️ Jasa Cetak</option>
+                        <option value="gift">🎁 Custom Gift</option>
+                    </select>
+                </div>
+
+                <div id="cat-order-foto" class="order-cat-group">
+                    <div class="form-group">
+                        <label>Jenis Cetak Foto:</label>
+                        <select id="prod-foto" class="select-box" onchange="updateReceipt()">
+                            <option value="Pas Foto 2x3 (Set 8)|3000">Pas Foto 2x3 (Rp 3.000)</option>
+                            <option value="Pas Foto 3x4 (Set 6)|3000">Pas Foto 3x4 (Rp 3.000)</option>
+                            <option value="Pas Foto 4x6 (Set 4)|3000">Pas Foto 4x6 (Rp 3.000)</option>
+                            <option value="Foto 2R|1000">Foto 2R (Rp 1.000)</option>
+                            <option value="Foto 3R|2000">Foto 3R (Rp 2.000)</option>
+                            <option value="Foto 4R|3000">Foto 4R (Rp 3.000)</option>
+                            <option value="Foto 5R|4000">Foto 5R (Rp 4.000)</option>
+                            <option value="Foto 6R|5000">Foto 6R (Rp 5.000)</option>
+                            <option value="Foto 8R|10000">Foto 8R (Rp 10.000)</option>
+                            <option value="Foto 10R|11000">Foto 10R (Rp 11.000)</option>
+                            <option value="Foto A4|13000">Foto A4 (Rp 13.000)</option>
+                            <option value="Photo Strip|2500">Photo Strip (Rp 2.500)</option>
+                            <option value="Mini Strip|1000">Mini Strip (Rp 1.000)</option>
+                            <option value="Polaroid|1000">Polaroid (Rp 1.000)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div id="cat-order-ganci" class="order-cat-group hidden">
+                    <div class="form-group">
+                        <label>Jenis Ganci/Keychain:</label>
+                        <select id="prod-ganci" class="select-box" onchange="updateReceipt()">
+                            <option value="Keychain Akrilik|7000">Keychain Akrilik (Rp 7.000)</option>
+                            <option value="Ganci ID Card|12000">Ganci ID Card (Rp 12.000)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div id="cat-order-jasa" class="order-cat-group hidden">
+                    <div class="form-group">
+                        <label>Layanan Jasa Cetak:</label>
+                        <select id="prod-jasa" class="select-box" onchange="updateReceipt()">
+                            <option value="Cetak Kartu BPJS|15000">Cetak Kartu BPJS (Rp 15.000)</option>
+                            <option value="Cetak KTM / Kartu Pelajar PVC|15000">Cetak KTM/Kartu Pelajar (Rp 15.000)</option>
+                            <option value="Cetak ID Card PVC|12000">Cetak ID Card PVC (Rp 12.000)</option>
+                            <option value="Cetak Kartu Nama|5000">Cetak Kartu Nama (Rp 5.000)</option>
+                            <option value="Cetak Amplop Custom|15000">Cetak Amplop Custom (Rp 15.000)</option>
+                            <option value="Cetak Hangtag Ultah|5000">Cetak Hangtag Ultah (Rp 5.000)</option>
+                            <option value="Cetak Undangan All Event|0">Cetak Undangan All Event (Tanya WA)</option>
+                            <option value="Cetak Stiker|0">Cetak Stiker (Tanya WA)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div id="cat-order-gift" class="order-cat-group hidden">
+                    <div class="form-group">
+                        <label>Jenis Custom Gift:</label>
+                        <select id="prod-gift" class="select-box" onchange="updateReceipt()">
+                            <option value="Mini Gift Snack + Foto|15000">Mini Gift Snack + Foto (Rp 15.000)</option>
+                            <option value="Booklet Kenangan|25000">Booklet Kenangan (Rp 25.000)</option>
+                            <option value="DIY Birthday Card|20000">DIY Birthday Card (Rp 20.000)</option>
+                            <option value="Scrap Frame Costume|45000">Scrap Frame Costume / Bingkai (Rp 45.000)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group mt-10">
+                    <label>Jumlah (Qty):</label>
+                    <input type="number" id="prod-qty" value="1" min="1" onchange="updateReceipt()">
+                </div>
+
+                <div class="form-group mt-10">
+                    <label>Detail/Kode Template/Keterangan:</label>
+                    <input type="text" id="prod-detail" placeholder="Contoh: Template G01" onkeyup="updateReceipt()">
+                </div>
+
+                <div class="form-section">
+                    <h3>📝 DATA PEMESAN</h3>
+                    <div class="form-group">
+                        <label for="cust-name">Nama Pemesan:</label>
+                        <input type="text" id="cust-name" placeholder="Masukkan nama kamu" onkeyup="updateReceipt()">
+                    </div>
+                    
+                    <!-- INPUT INFO PENGIRIMAN FOTO YANG RAMAH PEMULA -->
+                    <div class="form-group">
+                        <label for="cust-photo">Pengiriman Foto (Pilih salah satu):</label>
+                        <input type="text" id="cust-photo" placeholder="Kirim via chat WA / Link GDrive (jika ada)" onkeyup="updateReceipt()">
+                        <small style="color: #666; font-size: 11px; display: block; margin-top: 4px;">
+                            💡 <em>Bingung GDrive? Kosongkan saja & kirim fotonya langsung lewat chat WhatsApp setelah tombol di bawah diklik!</em>
+                        </small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cust-notes">Catatan Tambahan:</label>
+                        <textarea id="cust-notes" rows="2" placeholder="Contoh: Pengiriman via JNE" onkeyup="updateReceipt()"></textarea>
+                    </div>
+
+                    <button class="btn-pink-full" onclick="switchTab('transaksi')">🧾 Lihat Nota Digital</button>
+                </div>
+            </section>
+        </section>
+
+        <!-- TAB 4: TEMPLATES -->
+        <section id="tab-templates" class="tab-content">
+            <section class="section-card">
+                <h2>🖼️ GALLERY TEMPLATE PHOTOBOOTH</h2>
+                <p class="section-desc">Pilih kode template favoritmu untuk diisi di Form Order!</p>
+
+                <div class="gallery-category">
+                    <h3 class="cat-title">✨ Series G</h3>
+                    <div class="gallery-img-wrapper"><img src="template-g.png" alt="Template G" class="gallery-img"></div>
+                </div>
+                <div class="gallery-category">
+                    <h3 class="cat-title">💖 Series A</h3>
+                    <div class="gallery-img-wrapper"><img src="template-a.png" alt="Template A" class="gallery-img"></div>
+                </div>
+                <div class="gallery-category">
+                    <h3 class="cat-title">🌟 Series R Part 1</h3>
+                    <div class="gallery-img-wrapper"><img src="template-r1.png" alt="Template R1" class="gallery-img"></div>
+                </div>
+                <div class="gallery-category">
+                    <h3 class="cat-title">🔥 Series R Part 2</h3>
+                    <div class="gallery-img-wrapper"><img src="template-r2.png" alt="Template R2" class="gallery-img"></div>
+                </div>
+            </section>
+        </section>
+
+        <!-- TAB 5: NOTA & TRANSAKSI -->
+        <section id="tab-transaksi" class="tab-content">
+            <section class="section-card">
+                <h2>🧾 NOTA DIGITAL TRANSAKSI</h2>
+                <p class="section-desc">Rincian pesanan kamu secara terstruktur sebelum dikirim ke WhatsApp.</p>
+
+                <div class="receipt-paper" id="receipt-box">
+                    <div class="receipt-header">
+                        <h3>CHIBIPRINT.ID</h3>
+                        <p>--- OFFICIAL RECEIPT ---</p>
+                        <p id="rcp-date">Tanggal: -</p>
+                    </div>
+                    <div class="receipt-body">
+                        <p><strong>Pemesan:</strong> <span id="rcp-name">-</span></p>
+                        <div class="receipt-divider">--------------------------------</div>
+                        <div id="rcp-items-list">
+                            <p class="empty-msg">Belum ada item pesanan.</p>
+                        </div>
+                        <div class="receipt-divider">--------------------------------</div>
+                        <p class="rcp-total"><strong>TOTAL EST.:</strong> <span id="rcp-total-price">Rp 0</span></p>
+                        <p class="rcp-notes"><strong>Catatan/Detail:</strong> <span id="rcp-notes">-</span></p>
+                    </div>
+                    <div class="receipt-footer">
+                        <p>★ TERIMA KASIH TELAH BERBELANJA ★</p>
+                    </div>
+                </div>
+
+                <button class="btn-send-wa" onclick="sendToWhatsApp()">
+                    📲 FIX ORDER & KIRIM KE WHATSAPP
+                </button>
+            </section>
+        </section>
+
+        <!-- TAB 6: PAYMENT / QRIS -->
+        <section id="tab-payment" class="tab-content">
+            <section class="section-card payment-card">
+                <h2>💳 PEMBAYARAN VIA QRIS</h2>
+                <p class="section-desc">Scan QRIS menggunakan GoPay, OVO, Dana, ShopeePay, atau Mobile Banking.</p>
+                
+                <div class="qris-box">
+                    <img src="qris.jpg" alt="QRIS Chibiprint.id" class="qris-img">
+                    <div class="qris-info">
+                        <p class="qris-name">Chibiprint.id</p>
+                        <p class="qris-nmid">NMID : ID1025424061188</p>
+                        <p class="qris-tip">💡 Simpan bukti transfer untuk dikirim ke WA!</p>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="site-footer">
+            <p>© 2026 Chibiprint.id • All Rights Reserved</p>
+        </footer>
+
+    </div>
+
+    <!-- JAVASCRIPT LOGIC -->
+    <script>
+        function switchTab(tabName) {
+            const tabs = document.querySelectorAll('.tab-content');
+            const btns = document.querySelectorAll('.nav-btn');
+            
+            tabs.forEach(tab => tab.classList.remove('active'));
+            btns.forEach(btn => btn.classList.remove('active'));
+
+            document.getElementById('tab-' + tabName).classList.add('active');
+            
+            btns.forEach(btn => {
+                if(btn.getAttribute('onclick').includes(tabName)) {
+                    btn.classList.add('active');
+                }
+            });
+
+            if(tabName === 'transaksi') {
+                updateReceipt();
+            }
+
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function filterOrderCategory() {
+            const cat = document.getElementById('select-category').value;
+            document.querySelectorAll('.order-cat-group').forEach(el => el.classList.add('hidden'));
+            document.getElementById('cat-order-' + cat).classList.remove('hidden');
+            updateReceipt();
+        }
+
+        function getSelectedProduct() {
+            const cat = document.getElementById('select-category').value;
+            const selectEl = document.getElementById('prod-' + cat);
+            const val = selectEl.value.split('|');
+            return {
+                name: val[0],
+                price: parseInt(val[1]) || 0
+            };
+        }
+
+        function updateReceipt() {
+            const name = document.getElementById('cust-name').value.trim() || '(Belum Diisi)';
+            const notes = document.getElementById('cust-notes').value.trim() || '-';
+            const detail = document.getElementById('prod-detail').value.trim() || '-';
+            const photoInfo = document.getElementById('cust-photo').value.trim() || 'Kirim via Chat WA';
+            const qty = parseInt(document.getElementById('prod-qty').value) || 1;
+
+            document.getElementById('rcp-name').innerText = name;
+            document.getElementById('rcp-notes').innerText = detail + ' | Info Foto: ' + photoInfo + ' | Catatan: ' + notes;
+
+            const today = new Date();
+            document.getElementById('rcp-date').innerText = 'Tanggal: ' + today.toLocaleDateString('id-ID');
+
+            const prod = getSelectedProduct();
+            const total = prod.price * qty;
+
+            let priceDisplay = prod.price === 0 ? 'Tanya WA' : 'Rp ' + total.toLocaleString('id-ID');
+
+            let itemsHtml = `<div class="rcp-row"><span>${prod.name} (${qty}x)</span><span>${priceDisplay}</span></div>`;
+
+            document.getElementById('rcp-items-list').innerHTML = itemsHtml;
+            document.getElementById('rcp-total-price').innerText = prod.price === 0 ? 'Hubungi WA' : 'Rp ' + total.toLocaleString('id-ID');
+        }
+
+        function sendToWhatsApp() {
+            const name = document.getElementById('cust-name').value.trim();
+            const notes = document.getElementById('cust-notes').value.trim();
+            const detail = document.getElementById('prod-detail').value.trim();
+            const photoInfo = document.getElementById('cust-photo').value.trim() || 'Kirim langsung via chat WA';
+            const qty = document.getElementById('prod-qty').value || '1';
+
+            if (!name) {
+                alert('Harap isi Nama Pemesan di menu Order Now!');
+                switchTab('order');
+                return;
+            }
+
+            const prod = getSelectedProduct();
+
+            let message = `Halo Chibiprint.id, saya mau pesan produk berikut:\n\n`;
+            message += `👤 *Nama Pemesan:* ${name}\n`;
+            message += `🛒 *Produk:* ${prod.name}\n`;
+            message += `🔢 *Jumlah:* ${qty} pcs\n`;
+            if (detail) message += `📌 *Detail/Template:* ${detail}\n`;
+            message += `📷 *Pengiriman Foto:* ${photoInfo}\n`;
+            if (notes) message += `📝 *Catatan:* ${notes}\n`;
+            message += `\nSaya akan melakukan pembayaran via QRIS dan mengirim bukti transfer beserta fotonya. Terima kasih!`;
+
+            const phone = "62895627581188";
+            const waUrl = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+            
+            window.open(waUrl, '_blank');
+        }
+    </script>
+</body>
+</html>
